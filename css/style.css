@@ -28,4 +28,5 @@ figcaption {
   display: block;
   min-height: 1.5em;
   font-family: 'Apple Color Emoji', 'Android Emoji', 'Segoe UI Symbol', Symbola, sans-serif;
+  cursor: pointer;
 }
