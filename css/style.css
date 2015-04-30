@@ -31,3 +31,27 @@ figcaption {
   font-family: 'Apple Color Emoji', 'Android Emoji', 'Segoe UI Symbol', Symbola, sans-serif;
   cursor: pointer;
 }
+
+.logo {
+  font-size: 5em;
+}
+
+h1 {
+  margin-top: 0;
+}
+
+h2 {
+  margin-top: 2em;
+}
+
+.unicodes.filtered figure {
+  display: none;
+}
+
+.unicodes.filtered .show {
+  display: inline-block;
+}
+
+input[type="search"] {
+  font-size: 3em;
+}
