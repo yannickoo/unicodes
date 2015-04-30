@@ -1,6 +1,7 @@
 (function() {
   document.addEventListener('DOMContentLoaded', function() {
     var symbols = document.querySelectorAll('.symbol'),
+        search = document.querySelector('input[type="search"]'),
         selectText = function(element) {
           var range,
               selection;
@@ -24,5 +25,31 @@
         selectText(this);
       });
     }
+
+    search.addEventListener('input', function() {
+      var value = this.value,
+          unicodeWrapper = document.querySelector('.unicodes'),
+          figures = unicodeWrapper.querySelectorAll('figure'),
+          matches = [].filter.call(figures, function(figure) {
+            return figure.innerText.toLowerCase().indexOf(value) !== -1;
+          });
+
+          console.log(matches);
+
+      if (matches.length) {
+        unicodeWrapper.classList.add('filtered');
+
+        for (var i = 0; i < figures.length; i++) {
+          figures[i].classList.remove('show');
+        }
+
+        matches.forEach(function(match) {
+          match.classList.add('show');
+        });
+      }
+      else {
+        unicodeWrapper.classList.add('hide');
+      }
+    });
   });
 })();
