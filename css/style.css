@@ -21,6 +21,7 @@ figure {
   min-height: 8em;
   text-align: center;
   padding: 1em;
+  vertical-align: top;
 }
 
 figcaption {
