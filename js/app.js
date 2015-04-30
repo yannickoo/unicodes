@@ -27,6 +27,16 @@
                 return figure.innerText.toLowerCase().indexOf(value) !== -1;
               });
 
+          if (!value) {
+            unicodeWrapper.classList.remove('filtered');
+
+            for (var i = 0; i < figures.length; i++) {
+              figures[i].classList.remove('show');
+            }
+
+            return;
+          }
+
           search.value = value;
 
           if (matches.length) {

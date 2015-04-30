@@ -36,6 +36,10 @@ figcaption {
   font-size: 5em;
 }
 
+.logo h1 {
+  font-size: 0.5em;
+}
+
 h1 {
   margin-top: 0;
 }
@@ -44,16 +48,13 @@ h2 {
   margin-top: 2em;
 }
 
+.unicodes.filtered h2,
 .unicodes.filtered figure {
   display: none;
 }
 
 .unicodes.filtered .show {
   display: inline-block;
-}
-
-.unicodes.filtered h2 {
-  display: none;
 }
 
 input[type="search"] {
