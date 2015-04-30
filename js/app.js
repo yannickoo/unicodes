@@ -27,8 +27,11 @@
                 return figure.innerText.toLowerCase().indexOf(value) !== -1;
               });
 
+          search.value = value;
+
           if (!value) {
             unicodeWrapper.classList.remove('filtered');
+            unicodeWrapper.classList.remove('hide');
 
             for (var i = 0; i < figures.length; i++) {
               figures[i].classList.remove('show');
@@ -37,7 +40,7 @@
             return;
           }
 
-          search.value = value;
+
 
           if (matches.length) {
             unicodeWrapper.classList.add('filtered');

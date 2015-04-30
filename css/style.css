@@ -4,6 +4,10 @@ body {
   cursor: default;
 }
 
+a {
+  text-decoration: none;
+}
+
 code {
   display: inline-block;
   padding: .2em;
