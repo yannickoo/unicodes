@@ -52,6 +52,10 @@ h2 {
   display: inline-block;
 }
 
+.unicodes.filtered h2 {
+  display: none;
+}
+
 input[type="search"] {
   font-size: 3em;
 }
