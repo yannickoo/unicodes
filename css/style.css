@@ -1,6 +1,7 @@
 body {
   margin: 1em;
   text-align: center;
+  cursor: default;
 }
 
 code {
